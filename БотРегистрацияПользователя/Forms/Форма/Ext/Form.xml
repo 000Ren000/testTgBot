@@ -51,165 +51,250 @@
 					</Picture>
 					<ExtendedTooltip name="СоздатьОтчетРасширеннаяПодсказка" id="55"/>
 				</Button>
+				<Button name="тгКнопки" id="82">
+					<Type>UsualButton</Type>
+					<CommandName>Form.Command.тгКнопки</CommandName>
+					<ExtendedTooltip name="тгКнопкиРасширеннаяПодсказка" id="83"/>
+				</Button>
 			</ChildItems>
 		</UsualGroup>
-		<UsualGroup name="Группа2" id="38">
-			<Group>AlwaysHorizontal</Group>
-			<Behavior>Usual</Behavior>
-			<Representation>None</Representation>
-			<ShowTitle>false</ShowTitle>
-			<ExtendedTooltip name="Группа2РасширеннаяПодсказка" id="39"/>
+		<Pages name="Группа4" id="56">
+			<PagesRepresentation>TabsOnTop</PagesRepresentation>
+			<ExtendedTooltip name="Группа4РасширеннаяПодсказка" id="57"/>
 			<ChildItems>
-				<Table name="Пользователи" id="5">
-					<Representation>List</Representation>
-					<AutoInsertNewRow>true</AutoInsertNewRow>
-					<EnableStartDrag>true</EnableStartDrag>
-					<EnableDrag>true</EnableDrag>
-					<DataPath>Пользователи</DataPath>
-					<RowFilter xsi:nil="true"/>
-					<ContextMenu name="ПользователиКонтекстноеМеню" id="6"/>
-					<AutoCommandBar name="ПользователиКоманднаяПанель" id="7">
-						<Autofill>false</Autofill>
-					</AutoCommandBar>
-					<ExtendedTooltip name="ПользователиРасширеннаяПодсказка" id="8"/>
-					<SearchStringAddition name="ПользователиСтрокаПоиска" id="9">
-						<AdditionSource>
-							<Item>Пользователи</Item>
-							<Type>SearchStringRepresentation</Type>
-						</AdditionSource>
-						<ContextMenu name="ПользователиСтрокаПоискаКонтекстноеМеню" id="10"/>
-						<ExtendedTooltip name="ПользователиСтрокаПоискаРасширеннаяПодсказка" id="11"/>
-					</SearchStringAddition>
-					<ViewStatusAddition name="ПользователиСостояниеПросмотра" id="12">
-						<AdditionSource>
-							<Item>Пользователи</Item>
-							<Type>ViewStatusRepresentation</Type>
-						</AdditionSource>
-						<ContextMenu name="ПользователиСостояниеПросмотраКонтекстноеМеню" id="13"/>
-						<ExtendedTooltip name="ПользователиСостояниеПросмотраРасширеннаяПодсказка" id="14"/>
-					</ViewStatusAddition>
-					<SearchControlAddition name="ПользователиУправлениеПоиском" id="15">
-						<AdditionSource>
-							<Item>Пользователи</Item>
-							<Type>SearchControl</Type>
-						</AdditionSource>
-						<ContextMenu name="ПользователиУправлениеПоискомКонтекстноеМеню" id="16"/>
-						<ExtendedTooltip name="ПользователиУправлениеПоискомРасширеннаяПодсказка" id="17"/>
-					</SearchControlAddition>
+				<Page name="Группа2" id="38">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Данные пользователя</v8:content>
+						</v8:item>
+					</Title>
+					<Group>AlwaysHorizontal</Group>
+					<ExtendedTooltip name="Группа2РасширеннаяПодсказка" id="39"/>
 					<ChildItems>
-						<CheckBoxField name="ПользователиСоздать" id="35">
-							<DataPath>Пользователи.Создать</DataPath>
-							<EditMode>EnterOnInput</EditMode>
-							<CheckBoxType>Auto</CheckBoxType>
-							<ContextMenu name="ПользователиСоздатьКонтекстноеМеню" id="36"/>
-							<ExtendedTooltip name="ПользователиСоздатьРасширеннаяПодсказка" id="37"/>
-						</CheckBoxField>
-						<InputField name="ПользователиИД" id="18">
-							<DataPath>Пользователи.ИД</DataPath>
-							<EditMode>EnterOnInput</EditMode>
-							<ContextMenu name="ПользователиИДКонтекстноеМеню" id="19"/>
-							<ExtendedTooltip name="ПользователиИДРасширеннаяПодсказка" id="20"/>
-						</InputField>
-						<InputField name="ПользователиФамилия" id="24">
-							<DataPath>Пользователи.Фамилия</DataPath>
-							<EditMode>EnterOnInput</EditMode>
-							<ContextMenu name="ПользователиФамилияКонтекстноеМеню" id="25"/>
-							<ExtendedTooltip name="ПользователиФамилияРасширеннаяПодсказка" id="26"/>
-						</InputField>
-						<InputField name="ПользователиИмя" id="21">
-							<DataPath>Пользователи.Имя</DataPath>
-							<EditMode>EnterOnInput</EditMode>
-							<ContextMenu name="ПользователиИмяКонтекстноеМеню" id="22"/>
-							<ExtendedTooltip name="ПользователиИмяРасширеннаяПодсказка" id="23"/>
-						</InputField>
-						<InputField name="ПользователиСообщение" id="30">
-							<DataPath>Пользователи.Сообщение</DataPath>
-							<EditMode>EnterOnInput</EditMode>
-							<ContextMenu name="ПользователиСообщениеКонтекстноеМеню" id="31"/>
-							<ExtendedTooltip name="ПользователиСообщениеРасширеннаяПодсказка" id="32"/>
-						</InputField>
-					</ChildItems>
-				</Table>
-				<UsualGroup name="Группа3" id="50">
-					<Group>Vertical</Group>
-					<Behavior>Usual</Behavior>
-					<ExtendedTooltip name="Группа3РасширеннаяПодсказка" id="51"/>
-					<ChildItems>
-						<UsualGroup name="Информер" id="43">
-							<Title>
-								<v8:item>
-									<v8:lang>ru</v8:lang>
-									<v8:content>Информер</v8:content>
-								</v8:item>
-							</Title>
-							<ToolTip>
-								<v8:item>
-									<v8:lang>ru</v8:lang>
-									<v8:content>Информер</v8:content>
-								</v8:item>
-							</ToolTip>
-							<Behavior>Usual</Behavior>
-							<ExtendedTooltip name="ИнформерРасширеннаяПодсказка" id="44"/>
+						<Table name="Пользователи" id="5">
+							<Representation>List</Representation>
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<DataPath>Пользователи</DataPath>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="ПользователиКонтекстноеМеню" id="6"/>
+							<AutoCommandBar name="ПользователиКоманднаяПанель" id="7">
+								<Autofill>false</Autofill>
+							</AutoCommandBar>
+							<ExtendedTooltip name="ПользователиРасширеннаяПодсказка" id="8"/>
+							<SearchStringAddition name="ПользователиСтрокаПоиска" id="9">
+								<AdditionSource>
+									<Item>Пользователи</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ПользователиСтрокаПоискаКонтекстноеМеню" id="10"/>
+								<ExtendedTooltip name="ПользователиСтрокаПоискаРасширеннаяПодсказка" id="11"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="ПользователиСостояниеПросмотра" id="12">
+								<AdditionSource>
+									<Item>Пользователи</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ПользователиСостояниеПросмотраКонтекстноеМеню" id="13"/>
+								<ExtendedTooltip name="ПользователиСостояниеПросмотраРасширеннаяПодсказка" id="14"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="ПользователиУправлениеПоиском" id="15">
+								<AdditionSource>
+									<Item>Пользователи</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="ПользователиУправлениеПоискомКонтекстноеМеню" id="16"/>
+								<ExtendedTooltip name="ПользователиУправлениеПоискомРасширеннаяПодсказка" id="17"/>
+							</SearchControlAddition>
 							<ChildItems>
-								<PictureDecoration name="тгQR" id="40">
-									<Width>20</Width>
-									<Height>7</Height>
-									<Title formatted="false">
+								<CheckBoxField name="ПользователиСоздать" id="35">
+									<DataPath>Пользователи.Создать</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="ПользователиСоздатьКонтекстноеМеню" id="36"/>
+									<ExtendedTooltip name="ПользователиСоздатьРасширеннаяПодсказка" id="37"/>
+								</CheckBoxField>
+								<InputField name="ПользователиИД" id="18">
+									<DataPath>Пользователи.ИД</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ПользователиИДКонтекстноеМеню" id="19"/>
+									<ExtendedTooltip name="ПользователиИДРасширеннаяПодсказка" id="20"/>
+								</InputField>
+								<InputField name="ПользователиФамилия" id="24">
+									<DataPath>Пользователи.Фамилия</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ПользователиФамилияКонтекстноеМеню" id="25"/>
+									<ExtendedTooltip name="ПользователиФамилияРасширеннаяПодсказка" id="26"/>
+								</InputField>
+								<InputField name="ПользователиИмя" id="21">
+									<DataPath>Пользователи.Имя</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ПользователиИмяКонтекстноеМеню" id="22"/>
+									<ExtendedTooltip name="ПользователиИмяРасширеннаяПодсказка" id="23"/>
+								</InputField>
+								<InputField name="ПользователиСообщение" id="30">
+									<DataPath>Пользователи.Сообщение</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ПользователиСообщениеКонтекстноеМеню" id="31"/>
+									<ExtendedTooltip name="ПользователиСообщениеРасширеннаяПодсказка" id="32"/>
+								</InputField>
+							</ChildItems>
+						</Table>
+						<UsualGroup name="Группа3" id="50">
+							<Group>Vertical</Group>
+							<Behavior>Usual</Behavior>
+							<ExtendedTooltip name="Группа3РасширеннаяПодсказка" id="51"/>
+							<ChildItems>
+								<UsualGroup name="Информер" id="43">
+									<Title>
 										<v8:item>
 											<v8:lang>ru</v8:lang>
-											<v8:content>QR-кол телеграмма</v8:content>
+											<v8:content>Информер</v8:content>
 										</v8:item>
 									</Title>
-									<Zoomable>true</Zoomable>
-									<ImageScale>30</ImageScale>
-									<Picture>
-										<xr:Abs>Picture.png</xr:Abs>
-										<xr:LoadTransparent>false</xr:LoadTransparent>
-									</Picture>
-									<ContextMenu name="тгQRКонтекстноеМеню" id="41"/>
-									<ExtendedTooltip name="тгQRРасширеннаяПодсказка" id="42"/>
-								</PictureDecoration>
-							</ChildItems>
-						</UsualGroup>
-						<UsualGroup name="АлкоИнформер" id="45">
-							<Title>
-								<v8:item>
-									<v8:lang>ru</v8:lang>
-									<v8:content>Алко информер</v8:content>
-								</v8:item>
-							</Title>
-							<ToolTip>
-								<v8:item>
-									<v8:lang>ru</v8:lang>
-									<v8:content>Алко информер</v8:content>
-								</v8:item>
-							</ToolTip>
-							<Behavior>Usual</Behavior>
-							<ExtendedTooltip name="АлкоИнформерРасширеннаяПодсказка" id="46"/>
-							<ChildItems>
-								<PictureDecoration name="тгQR1" id="47">
-									<Width>20</Width>
-									<Height>7</Height>
-									<Title formatted="false">
+									<ToolTip>
 										<v8:item>
 											<v8:lang>ru</v8:lang>
-											<v8:content>QR-кол телеграмма</v8:content>
+											<v8:content>Информер</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Behavior>Usual</Behavior>
+									<ExtendedTooltip name="ИнформерРасширеннаяПодсказка" id="44"/>
+									<ChildItems>
+										<PictureDecoration name="тгQR" id="40">
+											<Width>20</Width>
+											<Height>7</Height>
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>QR-кол телеграмма</v8:content>
+												</v8:item>
+											</Title>
+											<Zoomable>true</Zoomable>
+											<ImageScale>30</ImageScale>
+											<Picture>
+												<xr:Abs>Picture.png</xr:Abs>
+												<xr:LoadTransparent>false</xr:LoadTransparent>
+											</Picture>
+											<ContextMenu name="тгQRКонтекстноеМеню" id="41"/>
+											<ExtendedTooltip name="тгQRРасширеннаяПодсказка" id="42"/>
+										</PictureDecoration>
+									</ChildItems>
+								</UsualGroup>
+								<UsualGroup name="АлкоИнформер" id="45">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Алко информер</v8:content>
 										</v8:item>
 									</Title>
-									<ImageScale>30</ImageScale>
-									<Picture>
-										<xr:Abs>Picture.png</xr:Abs>
-										<xr:LoadTransparent>false</xr:LoadTransparent>
-									</Picture>
-									<ContextMenu name="тгQR1КонтекстноеМеню" id="48"/>
-									<ExtendedTooltip name="тгQR1РасширеннаяПодсказка" id="49"/>
-								</PictureDecoration>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Алко информер</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Behavior>Usual</Behavior>
+									<ExtendedTooltip name="АлкоИнформерРасширеннаяПодсказка" id="46"/>
+									<ChildItems>
+										<PictureDecoration name="тгQR1" id="47">
+											<Width>20</Width>
+											<Height>7</Height>
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>QR-кол телеграмма</v8:content>
+												</v8:item>
+											</Title>
+											<ImageScale>30</ImageScale>
+											<Picture>
+												<xr:Abs>Picture.png</xr:Abs>
+												<xr:LoadTransparent>false</xr:LoadTransparent>
+											</Picture>
+											<ContextMenu name="тгQR1КонтекстноеМеню" id="48"/>
+											<ExtendedTooltip name="тгQR1РасширеннаяПодсказка" id="49"/>
+										</PictureDecoration>
+									</ChildItems>
+								</UsualGroup>
 							</ChildItems>
 						</UsualGroup>
 					</ChildItems>
-				</UsualGroup>
+				</Page>
+				<Page name="Группа5" id="58">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Кнопки телеграмма</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="Группа5РасширеннаяПодсказка" id="59"/>
+					<ChildItems>
+						<Table name="СписокКнопок" id="60">
+							<Representation>List</Representation>
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<DataPath>СписокКнопок</DataPath>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="СписокКнопокКонтекстноеМеню" id="61"/>
+							<AutoCommandBar name="СписокКнопокКоманднаяПанель" id="62"/>
+							<ExtendedTooltip name="СписокКнопокРасширеннаяПодсказка" id="63"/>
+							<SearchStringAddition name="СписокКнопокСтрокаПоиска" id="64">
+								<AdditionSource>
+									<Item>СписокКнопок</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="СписокКнопокСтрокаПоискаКонтекстноеМеню" id="65"/>
+								<ExtendedTooltip name="СписокКнопокСтрокаПоискаРасширеннаяПодсказка" id="66"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="СписокКнопокСостояниеПросмотра" id="67">
+								<AdditionSource>
+									<Item>СписокКнопок</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="СписокКнопокСостояниеПросмотраКонтекстноеМеню" id="68"/>
+								<ExtendedTooltip name="СписокКнопокСостояниеПросмотраРасширеннаяПодсказка" id="69"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="СписокКнопокУправлениеПоиском" id="70">
+								<AdditionSource>
+									<Item>СписокКнопок</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="СписокКнопокУправлениеПоискомКонтекстноеМеню" id="71"/>
+								<ExtendedTooltip name="СписокКнопокУправлениеПоискомРасширеннаяПодсказка" id="72"/>
+							</SearchControlAddition>
+							<ChildItems>
+								<InputField name="СписокКнопокРеквизит1" id="73">
+									<DataPath>СписокКнопок.Группа1</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="СписокКнопокРеквизит1КонтекстноеМеню" id="74"/>
+									<ExtendedTooltip name="СписокКнопокРеквизит1РасширеннаяПодсказка" id="75"/>
+								</InputField>
+								<InputField name="СписокКнопокГруппа3" id="76">
+									<DataPath>СписокКнопок.Группа3</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="СписокКнопокГруппа3КонтекстноеМеню" id="77"/>
+									<ExtendedTooltip name="СписокКнопокГруппа3РасширеннаяПодсказка" id="78"/>
+								</InputField>
+								<InputField name="СписокКнопокГруппа2" id="79">
+									<DataPath>СписокКнопок.Группа2</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="СписокКнопокГруппа2КонтекстноеМеню" id="80"/>
+									<ExtendedTooltip name="СписокКнопокГруппа2РасширеннаяПодсказка" id="81"/>
+								</InputField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
 			</ChildItems>
-		</UsualGroup>
+		</Pages>
+		<TextDocumentField name="ОтветСервера" id="84">
+			<DataPath>ОтветСервера</DataPath>
+			<ContextMenu name="ОтветСервераКонтекстноеМеню" id="85"/>
+			<ExtendedTooltip name="ОтветСервераРасширеннаяПодсказка" id="86"/>
+		</TextDocumentField>
 	</ChildItems>
 	<Attributes>
 		<Attribute name="Объект" id="1">
@@ -302,6 +387,79 @@
 				</Column>
 			</Columns>
 		</Attribute>
+		<Attribute name="СписокКнопок" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Список кнопок</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="Группа1" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа1</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Группа2" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа2</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Группа3" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа3</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="ОтветСервера" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Ответ сервера</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
 	</Attributes>
 	<Commands>
 		<Command name="ОбновитьСписок" id="1">
@@ -348,6 +506,21 @@
 				</v8:item>
 			</ToolTip>
 			<Action>СоздатьОтчет</Action>
+		</Command>
+		<Command name="тгКнопки" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Тг кнопки</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Тг кнопки</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>тгКнопки</Action>
 		</Command>
 	</Commands>
 </Form>
